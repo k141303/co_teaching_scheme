@@ -1,5 +1,14 @@
-# Co-Teaching
-Implementation of "Co-Teaching Student-Model through Submission Results of Shared Task."  
+# Co-Teaching Student-Model through Submission Results of Shared Task
+This repository is an implementation used in "Co-Teaching Student-Model through Submission Results of Shared Task."  
+
+## Operating Environment
+
+You can use Dockerfile to construct the operating environment.
+
+```sh
+cd docker
+docker build -t [image_name] .
+```
 
 ## Train model in "Co-Teaching" setting on Airport category
 
