@@ -10,6 +10,10 @@ cd docker
 docker build -t [image_name] .
 ```
 
+## Data
+
+You need to download the [pre-trained BERT model]() and the [preprocessed dataset](), and unzip these zip files and place them in the project root folder.
+
 ## Train model in "Co-Teaching" setting on Airport category
 
 ```sh
