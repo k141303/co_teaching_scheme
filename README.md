@@ -17,7 +17,7 @@ You need to download the [pre-trained BERT model](https://drive.google.com/file/
 ## Train model in "Co-Teaching" setting on Airport category
 
 ```sh
-OUTPUT=./outputs
+OUTPUT=./outputs/co_teaching
 TASK=JP-5
 CATEGORY=Airport
 python3 code/knowledge_distillation.py \
@@ -37,7 +37,7 @@ python3 code/knowledge_distillation.py \
 ## Train model in "Non-Teaching" setting on Airport category
 
 ```sh
-OUTPUT=./outputs
+OUTPUT=./outputs/non_teaching
 TASK=JP-5
 CATEGORY=Airport
 python3 code/train.py \
