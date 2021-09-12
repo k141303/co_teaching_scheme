@@ -1,0 +1,25 @@
+model:
+  file_dir: ???
+  model_name: pytorch_model.bin
+  config_name: config.json
+  model_class: BertForDistillingIOB2Tagging
+
+pred:
+  batch_size: 32
+
+device:
+  fp16: true
+  fp16_opt_level: O1
+  no_cuda: false
+  device: null # Store during execution
+  n_gpu: null # Store during execution
+
+data:
+  target_dir: ???
+  save_dir: null
+  target_pageids: null
+  seq_len: 512
+  duplicate: 50
+  debug: false
+  num_workers: 5
+  save_raw_outouts: False

@@ -1,0 +1,1 @@
+from model.iob2tagging_model import BertForIOB2Tagging, BertForDistillingIOB2Tagging, BertForKnowledgeDistillationIOB2Tagging

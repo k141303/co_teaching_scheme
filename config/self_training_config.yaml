@@ -1,0 +1,53 @@
+# config/config.yaml
+
+seed: 1234
+
+log_dir: outputs
+
+model:
+  file_dir: ???
+  model_name: pytorch_model.bin
+  config_name: config.json
+  output_dir: null
+  freeze_share_model: false
+
+train:
+  epoch: 10
+  early_stop: 10
+  batch_size: 16
+  warmup_steps: 0.0
+  gradient_accumulation_steps: 1
+  hidden_dropout_prob: 0.1
+  attention_probs_dropout_prob: 0.1
+  class_weight_scheme: balanced_focal
+  focal_loss_gamma: 2 # If use balanced_focal
+  balanced_loss_beta: 0.999999 # If use balanced_focal
+
+eval:
+  batch_size: 32
+
+optim:
+  lr: 5e-5
+  adam_B1: 0.9
+  adam_B2: 0.999
+  adam_eps: 1e-8
+  weight_decay: 0
+
+data:
+  train_dir: ???
+  system_results_dir: ???
+  dev_rate: 0.1
+  seq_len: 512
+  duplicate: 100
+  debug: false
+  num_workers: 8
+  shuffle: true
+  prediction_labels: ???
+  dev_pageids: ???
+
+device:
+  fp16: true
+  fp16_opt_level: O1
+  no_cuda: false
+  device: null # Store during execution
+  n_gpu: null # Store during execution
