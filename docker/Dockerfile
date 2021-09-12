@@ -1,5 +1,5 @@
 FROM nvcr.io/nvidia/pytorch:20.11-py3
-LABEL maintaine=user
+LABEL maintaine=k141303
 
 RUN pip3 install \
     Janome==0.4.1 \
